@@ -2,9 +2,8 @@
 
 ### AlertView
 
-This is a Simple alert view for Swift 3.0
+This is a Simple alert view for iOS supported with Swift 3.0
 
-DashBoard-Gauge is a lightweight and easy-to-use source for showing Vehicles or anything else running status in Real time.
 
 ### Installation
 
