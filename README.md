@@ -12,7 +12,7 @@ This is a Simple alert view for iOS supported with Swift 3.0
         alertView = AlertVw(title:"Congratulations!", description:"You have registered successfully.", image:#imageLiteral(resourceName: "success"))
         alertView.show(animated: true)
         
-### Properties of Alert view
+## Properties of Alert view
 
         alertView.setTitleFont(font:UIFont(name: "Futura", size: 20)!)                      // set title label font
         alertView.setTitleColor(color:UIColor.black)                                        // set title label color
@@ -26,11 +26,11 @@ This is a Simple alert view for iOS supported with Swift 3.0
         alertView.clearBackground = clearBG                                                 // set background color
         alertView.appearFrom = direction                                                    // set direction of alert view
 
-## Authors
+### Authors
 
 [Ssowri1](https://github.com/ssowri1)
 
-## License
+### License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
 
