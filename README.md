@@ -2,16 +2,16 @@
 
 ## AlertView
 
-This is a Simple alert view for iOS supported with Swift 3.0
+This is a Simple alert view for iOS supported with all devices and its done by Swift 3.0.
 
 
 ## Installation
 
 ### simple way to show alert view
 
-Just put the below code snipet to your class
+Just put the below code snippet to your class
 
-        alertView = AlertVw(title:"Congratulations!", description:"You have registered successfully.", image:#imageLiteral(resourceName: "success"))
+        alertView = AlertVw(title:"Congratulations!", description:"You have registered successfully", image:#imageLiteral(resourceName: "success"))
         alertView.show(animated: true)
         
 ### Properties of Alert view
