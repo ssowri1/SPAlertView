@@ -94,7 +94,7 @@ class AlertVw: UIView, alertProtocol {
     func initialise(title:String, description:String, image:UIImage) {
         
         // get dynamic width for alertView and all controlls
-        let dialogViewWidth = frame.width-64
+        let dialogViewWidth = 260
         
         backgroundView.frame = frame
         backgroundView.backgroundColor = UIColor.black
@@ -110,17 +110,17 @@ class AlertVw: UIView, alertProtocol {
         imageView.contentMode = .scaleAspectFit
         dialogView.addSubview(imageView)
         
-        titleLabel.frame = CGRect(x: imageView.frame.size.width-5, y: imageView.frame.size.height/2 - imageView.frame.size.height/4-5, width: dialogViewWidth+8, height: 70)
+        titleLabel.frame = CGRect(x: imageView.frame.size.width-5, y: imageView.frame.size.height/2 - imageView.frame.size.height/4-5, width: CGFloat(dialogViewWidth) + 8, height: 70)
         titleLabel.text = title
         titleLabel.font = UIFont(name: "Futura", size: 22)
         titleLabel.textAlignment = .left
         titleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         titleLabel.numberOfLines = 0
         titleLabel.sizeToFit()
-        self.createShadow(view: titleLabel, color: UIColor.black, Offset: CGSize(width:0, height:0), opacity: 0.5, radious: 2)
+        self.createShadow(view: titleLabel, color: UIColor.black, Offset: CGSize(width:0, height:0), opacity: 0.5, radious: 1)
         dialogView.addSubview(titleLabel)
         
-        lblMessage.frame = CGRect(x: 17, y: titleLabel.frame.origin.y + titleLabel.frame.size.height + 8+10, width: dialogViewWidth-30, height: 50)
+        lblMessage.frame = CGRect(x: 17, y: Int(titleLabel.frame.origin.y + titleLabel.frame.size.height + 8 + 10), width: dialogViewWidth - 30, height: 50)
         lblMessage.numberOfLines = 0
         lblMessage.lineBreakMode = NSLineBreakMode.byWordWrapping
         lblMessage.font = UIFont(name: "Futura", size: 17)
@@ -141,11 +141,11 @@ class AlertVw: UIView, alertProtocol {
         
         // set dynamic height for alert view and their controls
         let dialogViewHeight = titleLabel.frame.height + 8 + lblMessage.frame.height + 8 + btnDone.frame.height + 8 + 30
-        btnDone.frame.origin = CGPoint(x:dialogViewWidth-105, y:dialogViewHeight-45)
+        btnDone.frame.origin = CGPoint(x:CGFloat(dialogViewWidth)-105, y:dialogViewHeight-45)
         dialogView.frame.origin = CGPoint(x: 32, y: frame.height)
-        dialogView.frame.size = CGSize(width: frame.width-64, height: dialogViewHeight)
+        dialogView.frame.size = CGSize(width: CGFloat(dialogViewWidth), height: dialogViewHeight)
         dialogView.backgroundColor = UIColor.clear
-        self.createGradientLayer(view: dialogView, colorOne: UIColor.white, colorTwo: UIColor(red: 0.839, green: 0.839, blue: 0.839, alpha: 1.00))
+        self.createGradientLayer(view: dialogView, colorOne: UIColor.white, colorTwo: UIColor.white)
         
         lblMessage.center = CGPoint(x: dialogView.frame.size.width / 2, y: dialogView.frame.size.height/2)
         dialogView.layer.cornerRadius = 10
