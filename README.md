@@ -16,6 +16,9 @@ Just put the below code snippet to your class
         alertView = AlertVw(title:"Congratulations!", description:"You have registered successfully", image:#imageLiteral(resourceName: "success"))
         alertView.show(animated: true)
         
+        alertView = AlertVw(title:"Congratulations!", description:"You have registered successfully.", image:#imageLiteral(resourceName: "success"))
+alertView.show(animated: true)
+
 ### Properties of Alert view
 
         alertView.setTitleFont(font:UIFont(name: "Futura", size: 20)!)                      // set title label font
