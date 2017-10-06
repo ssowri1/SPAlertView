@@ -2,8 +2,8 @@
 
 ## AlertView
 
-This is a Simple alert view for iOS supported with all devices and its done by Swift 3.0.
-
+Customized Alert or Prompt view for iOS with Swift 3.0 
+ 
 ![Screenshot](https://github.com/ssowri1/AlertView/blob/master/Screeshot.gif?raw=true)
 
 
