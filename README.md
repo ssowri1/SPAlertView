@@ -1,6 +1,6 @@
 
 
-## AlertView
+## SPAlertView
 
 Customized Alert or Prompt view for iOS comfortable with Swift 3.0
 
@@ -17,7 +17,7 @@ Just put the below code snippet to your class
         alertView.show(animated: true)
 
 
-### Properties of Alert view
+### Properties of SPAlertView
 
         alertView.setTitleFont(font:UIFont(name: "Futura", size: 20)!)                      // set title label font
         alertView.setTitleColor(color:UIColor.black)                                        // set title label color
