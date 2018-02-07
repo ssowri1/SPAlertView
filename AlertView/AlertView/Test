@@ -1,0 +1,156 @@
+Closures:
+Closures is a self-contained blocks of functionality that can be passed around and used in your code. Closures in swift are similar to C and objective C.
+
+Shallow copy:
+It will copy the reference of an object only not a memory. So both reference will pointing to same memory location. If you change one instance will lead to change another.
+
+Deep copy: 
+It will copy the reference and each copied will pointing to an own new memory location. So, it wont lead another memory. Which means If you change one object won’t change another one. Each copy will separately in memory.
+
+Enumeration:
+Enumertaion is a common type for group of related values and enables you to work with those values in a type safe in your code.
+
+Difference between NSUrlConnection and Session:
+NSUrlConnection: 
+* It will manage single request at a time.
+
+NSUrlSession: 
+* It will manage multiple requests 
+* Can download and upload the task even while the app is not running state or background state.
+* Get the progress of loading, upload and download.
+* Option to cancel, pause, resume, restart the download/upload the network operations.
+
+Tuple: A group of different values as represented as a Tuple. And It is comma separated lists. It is assed by value not referrence.
+
+Difference between tableView & collectionView:
+
+CollectionView: It can support a more than single column and just support the multi column grids, tiled grids, circular grids and anymore.
+
+TableView: Rather than it is displays a single column only and support vertical scrolling only. It can helps to insert, edit, delete and reorder rows of table view. See the delegate methods
+
+
+
+
+Reuse identifier: It is used to group of similar row is an UITableview. 
+A UITable view will allocate the UITableViewCell objects to display the content visible in Table.
+If reuse identifier doesn’t allocate the UITableView will forced allocate the UITableViewCell objects for each new item that Scrolls intoView.
+
+Inout: Modifying the variables memory location
+
+Deep copy and shallow copy:
+Deep copy: It will copy the reference and create a new memory for the object.
+Shallow copy: It will copy the reference only. And maintain a same memory in all objects.
+
+Find object’s class type:  using “is” or “as”
+
+Mvc : Model view controller
+Model: It contains Datas, and UI’s logic of components that user worked with in
+View : used to UI components.
+Controller : It is used to interact with Model and View for handling business logic and managing requests.
+
+MVVM : Model view view model = It is a two way comminication so will be considered as poor interactivity.
+MVC: Model view controller = It is a one way communication so it will be consider as rich interactivity.
+
+
+
+
+
+
+
+
+
+
+
+Closures: Closures are self-contained blocks of functionality that can be passed around in your code.
+It is enclosed with curly {} braces and defined by function type () → (). where → separates the arguments type, followed by in keyword separates the closures header from it’s body.
+It’s variable are mutable rather than copied.
+
+Blocks : Its variable are default behavior.
+
+Delegate and protocol
+
+Protocols: Set of methods that can be implemented by any class which confirms to the protocol.
+Delegates: It is reference to the class which confirm to the protocol and implement methods in protocol.
+
+Collections: collection is foundation framework class to storing and managing a group of objects. NSArray, NSDictionary, NSSet.
+ 
+Extension: Add a new functionality to the existing class, structure, enumeration or protocols. This includes ability to extend types for which you do not have access in your original source code. It is same as category in Objective C.
+
+REST API (Representational state transfer): Set of functionalities which developers can performs requests and receive response via HTTP protocol such as GET and POST method.
+
+Lazy: This will take care of complex tasks. It is just-in-time calculation of expensive work. This variables are created using a function.
+
+AUG: It delivers immersive and engaging experience to the virtual objects with the real world.
+So we can viewing and exploring virtual world in your app’s virtual objects.
+
+Video streaming: Http live streaming allows you to send live or prerecorded audio or video, with encryption and authentication from ordinary web server to any device (ios 3 and above or safari 4.0).
+The main index file contain multiple streams of same type and variable quality to deliver variable bandwidth or devices.
+It can support switching between streams.
+
+Geofensing: Its a circular region with a latitude and longitude at the center and a radios. It is intent to notify when an iOS devices enters or exists an area of region.
+
+Geocode: It is a pair of numerical values to represent a latitude and longitude of particular point on the globe. It is a network service to convert between lat long to placemark and placemark to lat long.
+
+MKUserSearch is let user search a place using this keyvalue.
+ 
+Difference between ? And ??
+?: It is the optional to check the variable has a value or not. So, It won’t execute if the variable has nil.
+??: It will provide a default value when an optional is null.
+
+Optional binding: It check the variable contains the value or not. If its nil the if statement just executed. If there’s a data it will unwrapped and assigned to the statement and code inside the brace is executed.
+ 
+Optional chaining: It is used to retrieving a values from chain of optional values.
+
+
+
+
+
+Map route path: MKPloylilinerender is used to draw a path from one destination to another destination. 
+→ Create a CGCordination (both source and destination)
+→ Create a Placemark
+→ Create a annotaion
+→ Point out it on map view
+→ Create direction requests
+→ get directions using Direction request.
+→ Render for overlay method will helps to draw a route path.
+
+
+Well versed in software development processes Agile/Scrum, Waterfall
+Scrum: Its a pre-plan meeting for estimated commitment of our software development.
+Agile: It is in each iteration involves team working through full software development lifecycle, including designing, recruitment analysis, coding, unit testing, figing issues and delivering product.
+
+Private api: Both public and private apis are provided by apple. But the Public apis are provided for you to use. But private APIs for Apple only.
+
+
+PushNotification (types, icon, text, action, new name):
+→ Create CSR request (Certificate signing request)
+→ Create SSL certificate using CSR. It will generate .cer formatter
+→ Drag and Drop to key chain. Then export it. Will get .P12.
+→ Will provide the device token to provider
+→ they will provide notification text to APNS along with appropriate device token.
+
+Generics: You can write Flexible and reusable functions and types that you can work with any type.
+
+Multi threading:
+GCD:
+NSOPERATIONAL QUEUE:
+
+
+MemoryManagement:
+
+Memory leaks: By assigning appropriate data types to variables we will avoid memory leaks.
+Instruments allows to identify the memory leaks in your project.
+
+escaping, non escaping,
+singleton
+type inference
+type safety
+self
+
+
+
+
+
+
+
+
