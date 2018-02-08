@@ -20,6 +20,37 @@ NSUrlSession:
 * Get the progress of loading, upload and download.
 * Option to cancel, pause, resume, restart the download/upload the network operations.
 
+Tuple: A group of different values as represented as a Tuple. And It is comma separated lists.
+
+Difference between tableView & collectionView:
+
+CollectionView: It can support a more than single column and just support the multi column grids, tiled grids, circular grids and anymore.
+
+TableView: Rather than it is displays a single column only and support vertical scrolling only. It can helps to insert, edit, delete and reorder rows of table view.
+
+
+Closures:
+Closures is a self-contained blocks of functionality that can be passed around and used in your code. Closures in swift are similar to C and objective C.
+
+Shallow copy:
+It will copy the reference of an object only not a memory. So both reference will pointing to same memory location. If you change one instance will lead to change another.
+
+Deep copy: 
+It will copy the reference and each copied will pointing to an own new memory location. So, it wont lead another memory. Which means If you change one object won’t change another one. Each copy will separately in memory.
+
+Enumeration:
+Enumertaion is a common type for group of related values and enables you to work with those values in a type safe in your code.
+
+Difference between NSUrlConnection and Session:
+NSUrlConnection: 
+* It will manage single request at a time.
+
+NSUrlSession: 
+* It will manage multiple requests 
+* Can download and upload the task even while the app is not running state or background state.
+* Get the progress of loading, upload and download.
+* Option to cancel, pause, resume, restart the download/upload the network operations.
+
 Tuple: A group of different values as represented as a Tuple. And It is comma separated lists. It is assed by value not referrence.
 
 Difference between tableView & collectionView:
@@ -27,8 +58,6 @@ Difference between tableView & collectionView:
 CollectionView: It can support a more than single column and just support the multi column grids, tiled grids, circular grids and anymore.
 
 TableView: Rather than it is displays a single column only and support vertical scrolling only. It can helps to insert, edit, delete and reorder rows of table view. See the delegate methods
-
-
 
 
 Reuse identifier: It is used to group of similar row is an UITableview. 
@@ -154,3 +183,9 @@ self
 
 
 
+
+PushNotification (types, icon, text, action):
+
+Generics:
+
+MemoryManagement:
